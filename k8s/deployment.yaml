@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: chatbot-backend
+      app: chatbot-backend
   replicas: 2
   template:
     metadata:
@@ -14,7 +14,7 @@ spec:
         app: chatbot-backend
     spec:
       containers:
-      - name: chatbot-backend
-        image: chatbot-backend
-        ports:
-        - containerPort: 3000
+        - name: chatbot-backend
+          image: chatbot-backend
+          ports:
+            - containerPort: 3000
